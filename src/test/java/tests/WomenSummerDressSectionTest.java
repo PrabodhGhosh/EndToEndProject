@@ -16,20 +16,23 @@ import resources.Utility;
 
 public class WomenSummerDressSectionTest extends Base {
 	public WebDriver driver;
-	public static Logger log = LogManager.getLogger(HomepageTest.class.getName());
 	HomePage home;
 	WomenSummerDressPage womenSummerDress;
+	public static Logger log = LogManager.getLogger(WomenSummerDressSectionTest.class.getName());
 	public String testDataPath= (System.getProperty("user.dir")) + "\\testdata\\testdata.properties";
 
 	@Test
 
 	public void verifyProductCount() throws IOException {
+		log.info("Women summer dress test case started");
 		driver = initializeDriver();
 		home = new HomePage(driver);
 		womenSummerDress = new WomenSummerDressPage(driver);
 		home.closePopUp();
 		home.clickWomenSummerDress();
 		Assert.assertEquals(womenSummerDress.getProductNumber(), Integer.parseInt(Utility.getValue(testDataPath, "ProductCount")));
+		log.info("Summer dress product count: "+ womenSummerDress.getProductNumber());
+		log.info("Women summer dress test case completed");
 	}
 	
 	

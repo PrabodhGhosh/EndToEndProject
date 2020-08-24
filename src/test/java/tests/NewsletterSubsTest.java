@@ -17,19 +17,20 @@ import resources.Utility;
 public class NewsletterSubsTest extends Base {
 	
 	public WebDriver driver;
-	public static Logger log = LogManager.getLogger(HomepageTest.class.getName());
 	HomePage home;
+	public static Logger log = LogManager.getLogger(NewsletterSubsTest.class.getName());
 	public String testDataPath= (System.getProperty("user.dir")) + "\\testdata\\testdata.properties";
 
 	@Test
 
 	public void verifyEmptyEmail() throws IOException {
-		
+		log.info("Newsletter subscription with empty email test started");
 		driver = initializeDriver();
 		home = new HomePage(driver);
 		home.closePopUp();
 		home.clickNewsLetterSubmit();
 		Assert.assertEquals(home.getNewsLetterError(), Utility.getValue(testDataPath, "NewsLetterError"));
+		log.info("Newsletter subscription with empty email test started");
 		
 	}
 	
@@ -37,26 +38,31 @@ public class NewsletterSubsTest extends Base {
 	@Test
 
 	public void verifyInvalidEmail() throws IOException {
-		
+		log.info("Newsletter subscription with invalid email test started");
 		driver = initializeDriver();
 		home = new HomePage(driver);
 		home.closePopUp();
 		home.enterNewsLetterInput(Utility.getValue(testDataPath, "InvalidEmail"));
+		log.info("Invalid email: "+ Utility.getValue(testDataPath, "InvalidEmail"));
 		home.clickNewsLetterSubmit();
 		Assert.assertEquals(home.getNewsLetterError(), Utility.getValue(testDataPath, "NewsLetterError"));
+		log.info("Newsletter subscription with invalid email test completed");
 		
 	}
 	
 	@Test
 
 	public void verifyValidEmail() throws IOException {
-		
+		log.info("Newsletter subscription with valid email test started");
+		String validEmail = new Random().nextInt(1000)+Utility.getValue(testDataPath, "ValidEmail");
 		driver = initializeDriver();
 		home = new HomePage(driver);
 		home.closePopUp();
-		home.enterNewsLetterInput(new Random().nextInt(1000)+Utility.getValue(testDataPath, "ValidEmail"));
+		home.enterNewsLetterInput(validEmail);
+		log.info("Valid email: "+ validEmail);
 		home.clickNewsLetterSubmit();
 		Assert.assertEquals(home.getNewsLetterError(), Utility.getValue(testDataPath, "NewsLetterSuccess"));
+		log.info("Newsletter subscription with valid email test completed");
 		
 	}
 	

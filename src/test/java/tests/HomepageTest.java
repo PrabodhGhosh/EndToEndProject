@@ -21,13 +21,14 @@ public class HomepageTest extends Base {
 	@Test
 
 	public void homePageNavigation() throws IOException {
+		log.info("Homepage test started");
 		driver = initializeDriver();
 		home = new HomePage(driver);
 		home.closePopUp();
 		Assert.assertEquals(driver.getCurrentUrl(), (Utility.getValue((System.getProperty("user.dir")) + "\\resources\\appdata.properties", "URL")));
 		Assert.assertEquals(home.verifyHeader(), true);
 		Assert.assertEquals(home.verifyFooter(), true);
-		log.info("Test completed");
+		log.info("Homepage test completed");
 
 	}
 	
