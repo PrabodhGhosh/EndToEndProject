@@ -1,109 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="0" total="8" passed="8">
+<testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Suite" duration-ms="105732" started-at="2020-08-23T18:56:22Z" finished-at="2020-08-23T18:58:08Z">
+  <suite name="Smoke" duration-ms="22868" started-at="2020-09-16T13:31:18Z" finished-at="2020-09-16T13:31:41Z">
     <groups>
     </groups>
-    <test name="Test" duration-ms="105732" started-at="2020-08-23T18:56:22Z" finished-at="2020-08-23T18:58:08Z">
+    <test name="Test" duration-ms="22868" started-at="2020-09-16T13:31:18Z" finished-at="2020-09-16T13:31:41Z">
       <class name="tests.HomepageTest">
-        <test-method status="PASS" signature="homePageNavigation()[pri:0, instance:tests.HomepageTest@79e4c792]" name="homePageNavigation" duration-ms="24344" started-at="2020-08-23T18:56:22Z" finished-at="2020-08-23T18:56:47Z">
+        <test-method status="PASS" signature="homePageNavigation()[pri:0, instance:tests.HomepageTest@7bba5817]" name="homePageNavigation" duration-ms="22112" started-at="2020-09-16T13:31:18Z" finished-at="2020-09-16T13:31:41Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- homePageNavigation -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:tests.HomepageTest@79e4c792]" name="tearDown" is-config="true" duration-ms="715" started-at="2020-08-23T18:56:47Z" finished-at="2020-08-23T18:56:48Z">
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:tests.HomepageTest@7bba5817]" name="tearDown" is-config="true" duration-ms="670" started-at="2020-09-16T13:31:41Z" finished-at="2020-09-16T13:31:41Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
       </class> <!-- tests.HomepageTest -->
-      <class name="tests.InvalidSignInTest">
-        <test-method status="PASS" signature="testLogin(java.lang.String, java.lang.String)[pri:0, instance:tests.InvalidSignInTest@4c60d6e9]" name="testLogin" duration-ms="19265" started-at="2020-08-23T18:56:48Z" data-provider="getInvalidLoginData" finished-at="2020-08-23T18:57:07Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[u1]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[p1]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testLogin -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:tests.InvalidSignInTest@4c60d6e9]" name="tearDown" is-config="true" duration-ms="703" started-at="2020-08-23T18:57:07Z" finished-at="2020-08-23T18:57:08Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-        <test-method status="PASS" signature="testLogin(java.lang.String, java.lang.String)[pri:0, instance:tests.InvalidSignInTest@4c60d6e9]" name="testLogin" duration-ms="15735" started-at="2020-08-23T18:57:08Z" data-provider="getInvalidLoginData" finished-at="2020-08-23T18:57:23Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[u2]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[p2]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testLogin -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:tests.InvalidSignInTest@4c60d6e9]" name="tearDown" is-config="true" duration-ms="796" started-at="2020-08-23T18:57:23Z" finished-at="2020-08-23T18:57:24Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-      </class> <!-- tests.InvalidSignInTest -->
-      <class name="tests.WomenSummerDressSectionTest">
-        <test-method status="PASS" signature="verifyProductCount()[pri:0, instance:tests.WomenSummerDressSectionTest@4a83a74a]" name="verifyProductCount" duration-ms="24810" started-at="2020-08-23T18:57:39Z" finished-at="2020-08-23T18:58:04Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifyProductCount -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:tests.WomenSummerDressSectionTest@4a83a74a]" name="tearDown" is-config="true" duration-ms="701" started-at="2020-08-23T18:58:04Z" finished-at="2020-08-23T18:58:04Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-      </class> <!-- tests.WomenSummerDressSectionTest -->
-      <class name="tests.NewsletterSubsTest">
-        <test-method status="PASS" signature="verifyEmptyEmail()[pri:0, instance:tests.NewsletterSubsTest@196a42c3]" name="verifyEmptyEmail" duration-ms="25348" started-at="2020-08-23T18:56:22Z" finished-at="2020-08-23T18:56:48Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifyEmptyEmail -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:tests.NewsletterSubsTest@196a42c3]" name="tearDown" is-config="true" duration-ms="690" started-at="2020-08-23T18:56:48Z" finished-at="2020-08-23T18:56:48Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-        <test-method status="PASS" signature="verifyInvalidEmail()[pri:0, instance:tests.NewsletterSubsTest@196a42c3]" name="verifyInvalidEmail" duration-ms="25758" started-at="2020-08-23T18:56:48Z" finished-at="2020-08-23T18:57:14Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifyInvalidEmail -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:tests.NewsletterSubsTest@196a42c3]" name="tearDown" is-config="true" duration-ms="732" started-at="2020-08-23T18:57:14Z" finished-at="2020-08-23T18:57:15Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-        <test-method status="PASS" signature="verifyValidEmail()[pri:0, instance:tests.NewsletterSubsTest@196a42c3]" name="verifyValidEmail" duration-ms="22977" started-at="2020-08-23T18:57:15Z" finished-at="2020-08-23T18:57:38Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifyValidEmail -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:tests.NewsletterSubsTest@196a42c3]" name="tearDown" is-config="true" duration-ms="761" started-at="2020-08-23T18:57:38Z" finished-at="2020-08-23T18:57:39Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-      </class> <!-- tests.NewsletterSubsTest -->
-      <class name="tests.CheckoutTest">
-        <test-method status="PASS" signature="checkOutJourney()[pri:0, instance:tests.CheckoutTest@15043a2f]" name="checkOutJourney" duration-ms="43438" started-at="2020-08-23T18:57:24Z" finished-at="2020-08-23T18:58:07Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- checkOutJourney -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:tests.CheckoutTest@15043a2f]" name="tearDown" is-config="true" duration-ms="680" started-at="2020-08-23T18:58:07Z" finished-at="2020-08-23T18:58:08Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-      </class> <!-- tests.CheckoutTest -->
     </test> <!-- Test -->
-  </suite> <!-- Suite -->
+  </suite> <!-- Smoke -->
 </testng-results>

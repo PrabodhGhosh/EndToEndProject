@@ -1,0 +1,6 @@
+2020-09-16 19:00:50.692 [main] INFO  tests.NewsletterSubsTest - Newsletter subscription with empty email test started
+2020-09-16 19:00:55.561 [main] INFO  tests.WomenSummerDressSectionTest - Women summer dress test case started
+2020-09-16 19:01:18.949 [TestNG-test=Test-1] INFO  tests.HomepageTest - Homepage test started
+2020-09-16 19:01:41.043 [TestNG-test=Test-1] INFO  tests.HomepageTest - Homepage test completed
+2020-09-16 19:02:07.092 [TestNG-test=Test-2] INFO  tests.NewsletterSubsTest - Newsletter subscription with empty email test started
+2020-09-16 19:02:07.092 [TestNG-test=Test-1] INFO  tests.HomepageTest - Homepage test started

@@ -9,32 +9,69 @@
 	<version>0.0.1-SNAPSHOT</version>
 	<packaging>jar</packaging>
 
+
 	<name>E2EProject</name>
 	<url>http://maven.apache.org</url>
-	<build>
+	<profiles>
 
-		<resources>
-			<resource>
-				<directory>src/main/java/resources</directory>
-			</resource>
-		</resources>
-		<plugins>
+		<profile>
 
-			<plugin>
-				<groupId>org.apache.maven.plugins</groupId>
-				<artifactId>maven-surefire-plugin</artifactId>
-				<version>3.0.0-M5</version>
-				<configuration>
-					<suiteXmlFiles>
-						<suiteXmlFile>testng.xml</suiteXmlFile>
-					</suiteXmlFiles>
-				</configuration>
-			</plugin>
+			<id>Regression</id>
 
-		</plugins>
+			<build>
 
-	</build>
+				<resources>
+					<resource>
+						<directory>src/main/java/resources</directory>
+					</resource>
+				</resources>
+				<plugins>
 
+					<plugin>
+						<groupId>org.apache.maven.plugins</groupId>
+						<artifactId>maven-surefire-plugin</artifactId>
+						<version>3.0.0-M5</version>
+						<configuration>
+							<suiteXmlFiles>
+								<suiteXmlFile>regression.xml</suiteXmlFile>
+							</suiteXmlFiles>
+						</configuration>
+					</plugin>
+
+				</plugins>
+
+			</build>
+		</profile>
+
+		<profile>
+
+			<id>Smoke</id>
+
+			<build>
+
+				<resources>
+					<resource>
+						<directory>src/main/java/resources</directory>
+					</resource>
+				</resources>
+				<plugins>
+
+					<plugin>
+						<groupId>org.apache.maven.plugins</groupId>
+						<artifactId>maven-surefire-plugin</artifactId>
+						<version>3.0.0-M5</version>
+						<configuration>
+							<suiteXmlFiles>
+								<suiteXmlFile>smoke.xml</suiteXmlFile>
+							</suiteXmlFiles>
+						</configuration>
+					</plugin>
+
+				</plugins>
+
+			</build>
+		</profile>
+	</profiles>
 	<properties>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 		<maven.compiler.target>1.8</maven.compiler.target>

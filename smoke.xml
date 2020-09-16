@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Smoke">
+	<listeners>
+		<listener class-name="resources.Listeners"></listener>
+		<listener class-name="resources.AnnotationTransformer" />
+	</listeners>
+	<test thread-count="2" name="Test" parallel="classes">
+		<classes>
+
+			<class name="tests.HomepageTest" />
+
+		</classes>
+	</test> <!-- Test -->
+</suite> <!-- Suite -->
